@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>VssBlog</title>
+    <link href="cssindex/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/json.js" type="text/javascript"></script>
+    <script src="js/uiControl.js" type="text/javascript"></script>
+    <link href="js/css/uiControl.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="contain">
+        <div id="cTop">
+            <div id="ctBox1">
+                <a href="#page1"></a>
+            </div>
+            <div id="ctBox2">
+                <a href="#page2"></a>
+            </div>
+            <div id="ctBox3">
+                <a href="#page3"></a>
+            </div>
+            <div id="ctBox4">
+                <a href="#page4"></a>
+            </div>
+            <a href="#"></a>
+        </div>
+        <div id="cMid">
+            <div id="cmPage1" class="Pages">
+                <div id="cmLeft1">
+                    <ul>
+                    </ul>
+                </div>
+                <div id="cmRight1">
+                    <div id="cmr1Login">
+                        <dl>
+                            <dt>UserName：</dt>
+                            <dd>
+                                <input name="cmr1_usr" id="cmr1Usr" type="text" class="dd_input" autocomplete="off"
+                                    onblur="CheckByRegexp(this, /^[a-zA-Z0-9@]{6,20}$/);" />
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Password：</dt>
+                            <dd>
+                                <input name="cmr1_psw" id="cmr1Psw" type="password" class="dd_input" autocomplete="off"
+                                    onblur="CheckByRegexp(this, /^[a-zA-Z0-9]{6,15}$/);" />
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Code ：</dt>
+                            <dd>
+                                <input name="cmr1_code" id="cmr1Code" type="text" class="dd_codeinput" autocomplete="off" />
+                                <img id="crm1CodeImg" src="css/image/2.jpg" />
+                            </dd>
+                        </dl>
+                        <dl>
+                            <div id="cmr1LogBtn" onclick="LoginBtnCallBack(this)">
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div id="cmPage2" class="Pages">
+                <!--第二页内容-->
+                <div id="cmLeft2">
+                    <div class="cmr2Top">
+                        Free to Get VssID
+                    </div>
+                    <div class="SimLine">
+                    </div>
+                    <div id="cmr2Mid">
+                        <dl>
+                            <dt>Account：</dt>
+                            <dd>
+                                <input name="ipt_user" id="id_user" type="text" class="dd_input" onfocus="ShowDiv(this);"
+                                    onblur="CheckUserName(this);" autocomplete="off" />
+                                <div>
+                                    The User Account need be 6 to 12</div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Password：</dt>
+                            <dd>
+                                <input name="ipt_psw" id="id_psw" type="password" class="dd_input" onfocus="ShowDiv(this);"
+                                    onblur="CheckPasswd(this);" autocomplete="off" />
+                                <div>
+                                    The Password need be 6 to 12 </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>ReInput：</dt>
+                            <dd>
+                                <input name="ipt_repsw" id="id_repsw" type="password" class="dd_input" onfocus="ShowDiv(this);"
+                                    onblur="CheckRepsw(this);" autocomplete="off" />
+                                <div>
+                                    Please Input Your Password Again</div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Nickname：</dt>
+                            <dd>
+                                <input name="ipt_name" id="id_name" type="text" class="dd_input" onfocus="ShowDiv(this);"
+                                    onblur="CheckNikeName(this);" autocomplete="off" />
+                                <div>
+                                    Please Input A Nickname</div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Sex：</dt>
+                            <dd>
+                                <label for="male">
+                                    <input type="radio" name="sex" id="male" class="dd_rdo" checked="checked" value="男" />
+                                    M</label>
+                                <label for="female">
+                                    <input type="radio" name="sex" id="female" class="dd_rdo" value="女" />
+                                    F</label>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Birthday：</dt>
+                            <dd>
+                                <select id="bir_year" name="bir_year" onchange="DaySelectCallBack();">
+                                </select>
+                                Year
+                                <select id="bir_month" name="bir_month" onchange="DaySelectCallBack();">
+                                </select>
+                                Month
+                                <select id="bir_day" name="bir_day">
+                                </select>
+                                Day
+                            </dd>
+                        </dl>
+                    </div>
+                    <div id="L_Bot">
+                        <input type="submit" onclick="RegisterBtnCallBack(this);" id="btn_reg" value="" />
+                    </div>
+                </div>
+                <div id="cmRight2">
+                </div>
+            </div>
+            <div id="cmPage3" class="Pages">
+                <div id="cmp3">
+                    <div id="cmp3Left">
+                    </div>
+                    <div id="cmp3Right">
+                        <div class="cmr3Top">
+                            Welcome to Our VssBlog
+                        </div>
+                        <div class="SimLine">
+                        </div>
+                        <div class="cml2Login">
+                            <dl>
+                                <dt>Account：</dt>
+                                <dd>
+                                    <input name="ipt_user" id="idl_user" type="text" class="dd_cmp3input" onfocus="ShowDiv(this);"
+                                        onblur="CheckUserName(this);" autocomplete="off" />
+                                    <div>
+                                        The Account Should be 6 to 12 character</div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>Password：</dt>
+                                <dd>
+                                    <input name="ipt_psw" id="idl_psw" type="password" class="dd_cmp3input" onfocus="ShowDiv(this);"
+                                        onblur="CheckPasswd(this);" autocomplete="off" />
+                                    <div>
+                                        The Password Should be 8 to 15 character</div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>Code：</dt>
+                                <dd>
+                                    <input name="ipt_psw" id="Text3" type="text" class="dd_codeinput" onfocus="ShowDiv(this);"
+                                        onblur="CheckPasswd(this);" autocomplete="off" />
+                                    <img id="cmp3CodeImg" src="css/image/2.jpg" alt="验证码" />
+                                    <div>
+                                        Please make sure your code is RIGHT.</div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div id="cmp3BtnDiv">
+                            <input type="submit" onclick="RegisterBtnCallBack(this);" id="cmp3Login" value="" />
+                        </div>
+                        <div class="blankDiv">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cmPage4" class="Pages">
+                <div id="cmp4">
+                    <div id="cmp4Left">
+                        <div class="cmr4Top">
+                            Please Write some Advise.
+                        </div>
+                        <div class="p4SimLine">
+                        </div>
+                        <div class="cmp4Box">
+                            <div id="p4Name">
+                                <ul>
+                                    <li>Can you tell us your Name ?</li>
+                                    <li>
+                                        <input type="text" class="p4InputText" id="p4InputName" /></li>
+                                </ul>
+                            </div>
+                            <div id="p4Score">
+                                <ul>
+                                    <li>What Level do you think is Our VssBlog ?</li>
+                                    <li>
+                                        <div id="p4sLi">
+                                            <img onmouseout="UI.Page4Star.SetStarFullByIscore();" onmouseover="UI.Page4Star.SetStarEmpty();" onclick="UI.Page4Star.SetStarFullByInt(1);" alt="" src="cssindex/image/p4ImgBlankStar.jpg" />
+                                            <img onmouseout="UI.Page4Star.SetStarFullByIscore();" onmouseover="UI.Page4Star.SetStarEmpty();" onclick="UI.Page4Star.SetStarFullByInt(2);" alt="" src="cssindex/image/p4ImgBlankStar.jpg" />
+                                            <img onmouseout="UI.Page4Star.SetStarFullByIscore();" onmouseover="UI.Page4Star.SetStarEmpty();" onclick="UI.Page4Star.SetStarFullByInt(3);" alt="" src="cssindex/image/p4ImgBlankStar.jpg" />
+                                            <img onmouseout="UI.Page4Star.SetStarFullByIscore();" onmouseover="UI.Page4Star.SetStarEmpty();" onclick="UI.Page4Star.SetStarFullByInt(4);" alt="" src="cssindex/image/p4ImgBlankStar.jpg" />
+                                            <img onmouseout="UI.Page4Star.SetStarFullByIscore();" onmouseover="UI.Page4Star.SetStarEmpty();" onclick="UI.Page4Star.SetStarFullByInt(5);" alt="" src="cssindex/image/p4ImgBlankStar.jpg" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="p4Content">
+                                <ul>
+                                    <li>Do you have something to let us know ?</li>
+                                    <li>
+                                        <textarea id="p4Textarea"></textarea>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="p4Email">
+                                <ul>
+                                    <li>Please leave your Email so that we can reply to you. </li>
+                                    <li>
+                                        <input type="text" id="p4InputEmail" class="p4InputText" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="p4Btn">
+                            <input type="submit" onclick="RegisterBtnCallBack(this);" id="cmp4Write" value="" />
+                        </div>
+                        <div class="blankDiv">
+                        </div>
+                    </div>
+                    <div id="cmp4Right">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cBot">
+            2014 Dept. of Computer Science, CityU
+        </div>
+    </div>
+    <div id="LoginFailShowDiv">
+        <div id="SorryDiv"></div>
+        <div id="SorryText">There 's something Wrong with your Account OR Password.</div>
+    </div><!--负责显示登陆失败-->
+    <div id="RegisterFinishJmpDiv">
+        <div id="LoginDiv"></div>
+        <div id="LoginText">Login Success. 2 Second Wait for the Main Page.</div>
+    </div><!--负责显示注册成功后延迟跳转到首页-->
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

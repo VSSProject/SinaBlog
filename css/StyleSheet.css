@@ -1,0 +1,620 @@
+﻿*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-color: #94CCEC;
+    font-family: Tahoma, Arial, sans-serif;
+}
+/*Fixed Block*/
+#userBox
+{
+    width: 45px;
+    position: fixed;
+    left: 0px;
+    top: 200px;
+    height: 227px;
+}
+#uNewAll, #uMention, #uNewListen, #uNewFollow, #uConfig
+{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: #438AB7; /*淡银#E0E0E0;/*亮白 #F7F7F7; /* 深色系 #458CAB*/
+    position: relative;
+}
+#uNewAll
+{
+    background-image: url(image/uImgAll.jpg);
+}
+#uMention
+{
+    background-image: url(image/uMention.gif);
+}
+#uNewListen
+{
+    background-image: url(image/uNewListen.gif);
+}
+#uNewFollow
+{
+    background-image: url(image/uNewFollow.gif);
+}
+#uConfig
+{
+    background-image: url(image/uConfig.jpg);
+}
+
+.uNums
+{
+    background-image: url(image/LeftCntBox.gif);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 35px;
+    top: -10px;
+    color: White;
+    text-align: center;
+    padding-top: 2px;
+}
+
+#pageBox
+{
+    float: left;
+    width: 165px;
+    height: 350px;
+    background-color: #FFF6D8; /*#3D4B57;  /* 深色 #F4FAD6;/*淡黄色!! #FFF6D8 ;/* 浅色 #D8F4FF; /* 白色背景 #FFF;/* 深蓝色背景 #458CAB; */ /*银灰色背选 #E0DBCA;*/
+}
+#pTop
+{
+    width: 100%;
+    height: 290px;
+}
+#ptTitle /*列表标题*/
+{
+    font-size: 16px;
+    line-height: 30px;
+    color: #0B093B;
+    font-weight: 600;
+    text-align: center;
+}
+#ptList ul li
+{
+    margin: auto;
+    width: 140px;
+    height: 25px;
+    list-style: none;
+    color: #100E40;
+    border-bottom: 1px dotted #44B1E3;
+}
+#ptList ul li a
+{
+    font-size: 13px;
+    float: left;
+    text-decoration: none;
+    color: #100E40; /*#44B1E3;/*#100E40;*/
+    width: 140px;
+    overflow: hidden;
+    line-height: 25px;
+    height: 25px;
+}
+#ptList ul li a:hover
+{
+    color: #AF0A6F;
+}
+.ptlName
+{
+    width: 60px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+.ptlListen
+{
+    width: 80px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -1px;
+}
+
+#pBottom
+{
+    width: 100%;
+    height: 60px;
+    background-color: #2AA8E0;
+}
+#pBottom div
+{
+    margin-top: 12px;
+    margin-left: 14px;
+    width: 35px;
+    height: 35px;
+    float: left;
+    cursor: pointer;
+}
+#pbLeftImg
+{
+    background-image: url(image/pbLeftImg.jpg);
+}
+#pbRightImg
+{
+    background-image: url(image/pbRightImg.jpg);
+}
+#pbHomeImg
+{
+    background-image: url(image/pbHomeImg.jpg);
+}
+/*Static Block*/
+/*contain*/
+#contain
+{
+    width: 980px;
+    margin: 0px auto;
+}
+/*cLeft*/
+#cLeft
+{
+    float: left;
+    width: 165px;
+    height: 257px;
+}
+#clFixed
+{
+    width: 165px;
+    height: auto;
+}
+#lLogo
+{
+    width: 165px;
+    height: 210px;
+    cursor: pointer;
+    background-image: url(image/lLogo.jpg);
+    display: block;
+}
+#lSearch
+{
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+    height: 32px;
+    background-color: White;
+    border: 1px solid #D1D1D1;
+}
+#lsShadow
+{
+    width: 163px;
+    height: 30px;
+    border: 1px solid #E5E5E5;
+}
+#lsShadow input[type='text']
+{
+    height: 30px;
+    width: 125px;
+    border: 0px;
+    padding-left: 8px;
+    float: left;
+    line-height: 30px;
+    font-size: 13px;
+    color: #828282;
+}
+#lSearch img
+{
+    margin: 2px;
+    width: 24px;
+    height: 24px;
+    float: left;
+    cursor: pointer;
+}
+/*cMid*/
+#cMid
+{
+    float: left;
+    width: 600px;
+    margin-left: 15px;
+    background-color: White;
+    height: auto;
+}
+#mWrite
+{
+    width: 100%;
+    height: 185px;
+    float: left;
+    background-image: url(image/wBlockImg.jpg);
+}
+#cmwTitle
+{
+    font-family: "MicroSoft YaHei" , "SimHei";
+    color: #333333;
+    font-size: 18px;
+    width: 539px;
+    margin: 15px auto 6px auto;
+}
+#cmwBlock
+{
+    width: 539px;
+    height: 85px;
+    margin: 2px auto;
+    border: 1px solid #7BD6F6; /*#D0D0D0;*/
+}
+#cmwbInput
+{
+    width: 529px;
+    height: 75px;
+    border: 0px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+#cmwCmd
+{
+    margin: 10px auto;
+    width: 539px;
+    height: 30px;
+    font-size: 14px;
+}
+#cmwcList
+{
+    margin: 10px;
+    width: 250px;
+    float: left;
+}
+#cmwcList span
+{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 4px;
+}
+#cmwcList a
+{
+    color: #2B4A78;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 5px;
+}
+#cmwcList a:hover
+{
+    text-decoration: underline;
+}
+#cmwclFace span
+{
+    background: url(image/wBlockIco.png) 0px 0px;
+}
+#cmwclPic span
+{
+    background: url(image/wBlockIco.png) -16px 0px;
+}
+#cmwclSub span
+{
+    background: url(image/wBlockIco.png) -32px 0px;
+}
+#cmwclFriend span
+{
+    background: url(image/wBlockIco.png) -48px 0px;
+}
+
+#cmwcLast
+{
+    margin-left: 30px;
+    color: #999999;
+    float: left;
+    line-height: 30px;
+}
+#cmwcLast span
+{
+    font-family: Georgia,Tahoma,Arial;
+    font-size: 26px;
+}
+#cmwcSend
+{
+    margin-left: 10px;
+    float: left;
+    width: 112px;
+    height: 30px;
+    background-image: url(image/sendImg.jpg);
+    cursor: pointer;
+}
+#crContain
+{
+    width: 600px;
+    height: 229px;
+}
+#cmFixed
+{
+    width: 600px;
+    height: auto;
+}
+#mMenu
+{
+    line-height: 44px;
+    height: 44px;
+    float: left;
+    width: 600px;
+    background-color: #BEE2F6;
+    color: #555555;
+}
+#mmLink span
+{
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+    font-weight: 600;
+}
+#mmLink ul li
+{
+    margin-left: 10px;
+    list-style: none;
+    float: left;
+    font-weight: normal;
+}
+#mmLink ul li a
+{
+    color: #124199;
+    text-decoration: none;
+    font-size: 14px;
+}
+#mmLink ul li a:hover
+{
+    text-decoration: underline;
+}
+#mmUpdown
+{
+    float: left;
+    margin-left: 65px;
+    width: 120px;
+    color: Blue;
+}
+#mmUpdown a
+{
+    color: #4B4B4B;
+    font-size: 13px;
+    text-decoration: none;
+}
+#mmuHide
+{
+    font-weight: bold;
+    margin-right: 10px;
+}
+#mmuShow
+{
+    color:#2B2B2B;
+    font-weight: bold;
+    margin-left: 10px;
+}
+#mmConfig
+{
+    margin-top: 12px;
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+    background-image: url(image/mmImgConf.jpg);
+}
+#mContent
+{
+    width: 560px;
+    margin: 15px auto;
+}
+#mContent ul li
+{
+    border-bottom: 1px dashed #d8d8d8;
+    list-style: none;
+    width: 100%;
+    float: left;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+/*cRight*/
+#cRight
+{
+    width: 185px;
+    background-color: White;
+    margin-left: 15px;
+    height: auto; /*683px;*/
+    float: left;
+    line-height: 24px;
+}
+#crFixed
+{
+    width: 185px;
+    background-color: White;
+    height: auto; /*683px;*/
+    float: left;
+    line-height: 24px;
+}
+#crContent
+{
+    width: 160px;
+    margin: auto;
+}
+.crcTitle
+{
+    font-family: "MicroSoft YaHei" , "SimHei";
+    margin-top: 6px;
+    float: left;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+}
+.dotted
+{
+    float: left;
+    width: 160px;
+    height: 1px;
+    border-bottom: 1px dotted #124191;
+    margin-bottom: 5px;
+}
+#crcTag
+{
+    float: left;
+}
+#crcTag div ul li
+{
+    float: left;
+    margin-left: 5px;
+    list-style: none;
+    cursor: pointer;
+}
+#crcTag div ul li a
+{
+    color: #124191;
+    font-size: 13px;
+    text-decoration: none;
+}
+#crcTag div ul li a:hover
+{
+    text-decoration: underline;
+}
+#crcRecord
+{
+    float: left;
+}
+#crcRecord div
+{
+    float: left;
+}
+#crcRecord div ul li
+{
+    margin-left: 5px;
+    list-style: none;
+    font-size: 12px;
+}
+#crcRecord div ul li a
+{
+    color: #2b4a78;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+#crcRecord div ul li a:hover
+{
+    color: #2B2B2B;
+}
+#crcInfo
+{
+    float: left;
+}
+#crcInfo div
+{
+    float: left;
+}
+#crcInfo div ul li
+{
+    margin-left: 5px;
+    list-style: none;
+    font-size: 12px;
+    word-wrap: break-word;
+    width: 160px;
+}
+#crcInfo div ul li a
+{
+    color: #2b4a78;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#crcInfo div ul li a:hover
+{
+    text-decoration: underline;
+}
+
+/*上传图片*/
+#UploadPicDiv
+{
+    width: 600px;
+    height: 400px;
+    background-color: #FEFEFE;
+    border: 1px solid #5B5B5B;
+}
+#imgShowBox
+{
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid #5B5B5B;
+}
+#UploadTop
+{
+    width: 80%;
+    margin: 20px auto;
+    height: 25px;
+    border-bottom: 1px dashed #5B5B5B;
+    padding-bottom: 12px;
+}
+#UploadTop input[type='submit']
+{
+    height: 24px;
+    width: 60px;
+    margin-left: 8px;
+    float: left;
+}
+#UploadTop input[type='file']
+{
+    height: 22px;
+    width: 240px;
+    float: left;
+}
+#iframeBox
+{
+    width: 600px;
+    float: left;
+    height: 300px;
+}
+#frameShow
+{
+    border: 1px solid #7B7B7B;
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+
+/*@功能*/
+#AtDiv
+{
+    width: 600px;
+    height: 400px;
+    background-color: #FEFEFE;
+    border: 1px solid #5B5B5B;
+}
+
+#AtTop
+{
+    width: 80%;
+    margin: 20px auto;
+    height: 25px;
+    border-bottom: 1px dashed #5B5B5B;
+    padding-bottom: 12px;
+}
+#AtList
+{
+    border: 1px solid #7B7B7B;
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+#atSelect
+{
+    width: 100%;
+    height: 100%;
+}
+
+#AtDiv input[type='submit']
+{
+    height: 24px;
+    width: 60px;
+    margin-left: 8px;
+    float: left;
+}

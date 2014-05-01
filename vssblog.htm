@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Blog-Home</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="js/css/uiControl.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/json.js" type="text/javascript"></script>
+    <script src="js/uiControl.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--Fixed Block-->
+    <div id="userBox">
+        <div id="uNewAll" onclick="LeftAllNewMsgCallBack();">
+            <div class="uNums">
+            </div>
+        </div>
+        <div id="uMention">
+            <div class="uNums">
+            </div>
+        </div>
+        <div id="uNewListen" onclick="GrepListenList();">
+            <div class="uNums">
+            </div>
+        </div>
+        <div id="uNewFollow">
+            <div class="uNums">
+            </div>
+        </div>
+        <div id="uConfig">
+            <div class="uNums">
+            </div>
+        </div>
+    </div>
+    <!--Main Block-->
+    <div id="contain">
+        <div id="cLeft">
+            <div id="clFixed">
+                <!--Fixed || Statuc-->
+                <div id="lLogo" onclick="ClickLogoHome();">
+                </div>
+                <div id="lSearch">
+                    <div id="lsShadow">
+                        <input id="lsInput" onclick="SearchClearTextCallBack();" type="text" value="Search Friends" />
+                        <img alt="Search" onclick="SearchUserCallBack();" src="css/image/search.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div id="pageBox">
+                <div id="pTop">
+                    <div id="ptTitle">
+                        Special Friends
+                    </div>
+                    <div id="ptList">
+                        <ul>
+                            <li><a href="#"><span class="ptlName">Xinyu Wang</span> <span class="ptlListen">Xinyu@CityU</span></a></li>
+                            <li><a href="#"><span class="ptlName">Jinfan Wang</span> <span class="ptlListen">Jinfan@CityU</span></a></li>
+                            <li><a href="#"><span class="ptlName">Harry Cui</span> <span class="ptlListen">HurryD@CityU</span></a></li>
+                            <li><a href="#"><span class="ptlName">Xingliang Yuan</span> <span class="ptlListen">Yuan@CityU</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="pBottom">
+                    <div id="pbLeftImg">
+                    </div>
+                    <div id="pbRightImg">
+                    </div>
+                    <div id="pbHomeImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cMid">
+            <div id="crContain">
+                <div id="cmFixed">
+                    <div id="mWrite">
+                        <div id="cmwTitle">
+                            The weather is not good, so……</div>
+                        <div id="cmwBlock">
+                            <textarea rows="5" id="cmwbInput" onkeyup="WorkOutWordNumCallBack();"></textarea>
+                        </div>
+                        <div id="cmwCmd">
+                            <div id="cmwcList">
+                                <a id="cmwclFace" href="#"><span></span>Icons</a> <a id="cmwclPic" onclick="AddPicCallBack();"
+                                    href="javascript:void(0);"><span></span>Pic</a> <a id="cmwclSub" href="#"><span></span>
+                                        Topic</a> <a id="cmwclFriend" onclick="AtCallBack();" href="javascript:void(0);"><span>
+                                        </span>Friends</a>
+                            </div>
+                            <div id="cmwcLast">
+                                <span id="LastWordSpan">140</span> Words Left</div>
+                            <div id="cmwcSend" onclick="SendMsgCallBack();">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mMenu">
+                        <div id="mmLink">
+                            <span>Navigation »</span>
+                            <ul>
+                                <li><a href="javascript:void(0);">TOP</a></li>
+                                <li><a href="javascript:void(0);" onclick="ShowHomeBtnCallBack();">Following</a></li>
+                                <li><a href="javascript:void(0);" onclick="ShowMineBtnCallBack();">Posts</a></li>
+                                <li><a href="javascript:void(0);" onclick="GrepMentionMe();">Mention</a></li>
+                                <li><a href="javascript:void(0);" onclick="ShowBoardBtnCallBack();">Board</a></li>
+                            </ul>
+                        </div>
+                        <div id="mmUpdown">
+                            <a id="mmuHide" href="javascript:void(0);">Show</a>|<a id="mmuShow" href="javascript:void(0);">Hide</a>
+                        </div>
+                        <div id="mmConfig">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fixed || Statuc-->
+            <div id="cmFirBlank">
+            </div>
+            <div id="cmSecBlank">
+            </div>
+            <div id="mContent">
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div id="cRight">
+            <!--Fixed || Static-->
+            <div id="crFixed">
+                <!--User DIV Change-->
+                <div id="crContent">
+                    <div id="crcName">
+                        <span id="strUin" class="crcTitle">Rain</span><span class="crcTitle" id="strNick"></span><span
+                            class="dotted"></span>
+                        <div class="crcText">
+                            <img id="strHeadUrl" alt="" src="css/image/crcImg.jpg" width="140px" height="140px" />
+                        </div>
+                    </div>
+                    <div id="crcRecord">
+                        <span class="crcTitle">Person Record</span><span class="dotted"></span>
+                        <div class="crcText">
+                            <ul>
+                                <li>Followers：<a href="javascript:void(0);" onclick="GrepListenList();" id="intFollow">312</a></li>
+                                <li>Following：<a href="javascript:void(0);" onclick="GrepFollow();" id="intListen">323</a></li>
+                                <li>Posts：<a href="javascript:void(0);" onclick="ShowMineBtnCallBack();" id="intSend">1023</a></li>
+                                <li>Favourites：<a href="javascript:void(0);" id="intSave">4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="crcInfo">
+                        <span class="crcTitle">Person Information</span><span class="dotted"></span>
+                        <div class="crcText">
+                            <ul>
+                                <li><span id="strSex">Male</span>，<span id="strStar">Libra</span>，<span id="strOld">1980s</span></li>
+                                <li><span>Work：</span><span id="strSubject">IT</span></li>
+                                <li><span>Hometown：</span><span id="strHome">Shijiazhuang，China</span></li>
+                                <li><span>Address：</span><span id="strPlace">AC1，CityU，HK</span></li>
+                                <li><span>WebPage：</span><a id="strUrl" href="#">http://www.cnblogs.com/wmw1989/</a></li>
+                                <li><span>Introduction：</span><span id="strPerInfo">A PhD Student in Dept. of CS, CityU</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="crcTag">
+                        <span class="crcTitle">Tags</span><span class="dotted"></span>
+                        <div class="crcText">
+                            <ul>
+                                <li><a href="#">Hello</a></li>
+                                <li><a href="#">Swimming</a></li>
+                                <li><a href="#">Running</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CopyRight-->
+    <div id="copyright">
+    </div>
+    <!--ChildWindow-->
+    <div id="ListenListDiv">
+        <div id="lldList">
+        </div>
+        <div class="lldBtn">
+            <input id="lldListenCancelbtn" onclick="CancelAllLitenCallBack();" type="button" />
+            <input id="lldListenAllBtn" onclick="FullAllLitenCallBack();" type="button" />
+        </div>
+    </div>
+    <div id="UploadPicDiv">
+        <div id="UploadTop">
+            <form name="upfile_form" action="API/Upload.aspx" onsubmit="uploadBtnCallBack();"
+            method="POST" enctype="multipart/form-data" target="check_file_frame">
+            <input type="file" name="upload_photo_file" id="UploadInput" onchange="previewImage(this, 'imagePreview')" />
+            <input type="submit" value="upload" />
+            </form>
+            <input type="submit" onclick="okImage();" value="confirm" />
+            <input onclick="ClosePicCallBack();" type="submit" value="cancel" />
+        </div>
+        <div id="iframeBox">
+            <iframe name="check_file_frame" id="frameShow" src="" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div id="AtDiv">
+        <div id="AtTop">
+            <input type="submit" onclick="okAt();" value="confirm" />
+            <input onclick="CloseAtCallBack();" type="submit" value="cancel" />
+        </div>
+        <div id="AtList">
+            <select id="atSelect" multiple="multiple">
+            </select>
+        </div>
+    </div>
+    <script src="js/vssblog.js" type="text/javascript"></script>
+</body>
+</html>

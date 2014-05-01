@@ -1,0 +1,268 @@
+﻿/*MainMsgTemplate模版  部分为模版公用 未分离*/
+.mcUserPic
+{
+    float:left;
+}
+.mcUserPic img
+{
+    width:50px;
+    height:50px;
+    border:1px solid #D2D2D2;
+}
+.ucMessage
+{
+    width:488px;
+    float:left;
+    font-size:14px;
+    line-height:23px;
+    margin-left:20px;
+}
+.ucmTurn
+{
+    
+}
+.ucMessage input[type='button']
+{
+    position:absolute;
+    width:73px;
+    height:21px;
+    top:5px;
+    left:380px;
+    border:0px;
+    cursor:pointer;
+}
+.ucmUser
+{
+    float:left;
+    display:inline;
+    color:#2b4a78;
+    font-size:14px;
+    cursor:pointer;
+}
+.ucmPubInfo
+{
+    margin-top:5px;
+}
+.ucmPubInfo div
+{
+    float:left;
+    font-size:12px;
+}
+.ucmpText
+{
+    color:#889db6;
+}
+.ucmpText span
+{
+    margin-left:5px;
+    color:#999;
+}
+.ucmpAll
+{
+    width:150px;
+    margin-left:40px;
+}
+.ucmpAll a
+{
+   color:#2b4a78;
+   text-decoration:none;
+}
+.ucmpAll a:hover
+{
+    text-decoration:underline;
+}
+.ucmpCmd
+{
+    margin-left:20px;
+}
+.ucmpCmd a
+{
+    color:#2b4a78;
+    text-decoration:none;
+    margin-left:6px;
+    margin-right:6px;
+}
+.ucmpCmd a:hover
+{
+    text-decoration:underline;
+}
+
+/*FindFriendTemplate模版*/
+
+
+.ucFindTitle
+{
+    float:left;
+    line-height:23px;
+}
+.ucFindTitle a
+{
+    color:#E56C0A;
+    font-size:14px;
+    text-decoration:none;
+    margin-right:5px;
+}
+.ucFindTitle a:hover
+{
+    text-decoration:underline;
+}
+.ucFindTitle span
+{
+    color:#999;
+    font-size:14px;
+}
+.mcListenList
+{
+    float:left;
+    width:488px;
+    line-height:21px;
+}
+.mcListenList a
+{
+    float:left;
+    margin-right:30px;
+    color:#999;
+    font-size:12px;
+    text-decoration:none;
+}
+.mcListenList a Strong
+{
+    color:#2b4a78;
+    font-weight:800;
+    font-size:14px;
+}
+.mcListenList a:hover Strong
+{
+    text-decoration:underline;
+}
+
+.ucmPerInfo
+{
+    float:left;
+    width:488px;
+    color:#333;
+}
+
+.mcFindBlank
+{
+    width:560px;
+    float:left;
+    height:3px;
+}
+.ucMessage2
+{
+    width:488px;
+    float:left;
+    font-size:14px;
+    line-height:23px;
+    margin-left:20px;
+    position:relative;
+}
+.ucMessage2 input[type='button']
+{
+    position:absolute;
+    width:73px;
+    height:21px;
+    top:5px;
+    left:380px;
+    border:0px;
+    cursor:pointer;
+}
+
+
+/*可能喜欢听众列表*/
+
+#ListenListDiv
+{
+    width:660px;
+    height:400px;
+    background-color:#FFFFFF;
+    position:absolute;
+    z-index:60;
+    border:1px solid #5B5B5B;
+    padding-left:15px;
+    padding-right:15px;
+}
+.ldBox
+{
+    margin-top:12px;
+    padding-bottom:12px;
+    float:left;
+    width:165px;
+    border-bottom:1px dashed #5B5B5B;
+}
+.ldLeft
+{
+    float:left;
+    width:50px;
+}
+.ldBox a img
+{
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    border:0px;
+}
+
+.ldlListen input
+{
+    margin:10px auto;
+    width:50px;
+    height:17px;
+    background:url(image/SmallListenBtn.jpg);
+    border:0px;
+    cursor:pointer;
+}
+.ldRight
+{
+    float:left;
+    margin-left:6px;
+    width:96px;
+    padding-top:10px;
+}
+.ldRight a
+{
+    color:#e56c0a;
+    text-decoration:none;
+    font-size:14px;
+}
+.ldrUser
+{
+    color:#999999;
+    font-size:12px;
+    margin-top:6px;
+}
+.ldrListen
+{
+    color:#2b4a78;
+    font-size:12px;
+    margin-top:6px;
+}
+.lldBtn
+{
+    float:left;
+    width:660px;
+    position:relative;
+}
+#lldListenAllBtn
+{
+    height:30px;
+    cursor:pointer;
+    width:112px;
+    position:absolute;
+    top:15px;
+    left:530px;
+    border:0px;
+    background-image:url(image/ListenAllBtn.jpg);
+}
+#lldListenCancelbtn
+{
+    height:25px;
+    cursor:pointer;
+    width:56px;
+    position:absolute;
+    top:17px;
+    left:20px;
+    border:0px;
+    background-image:url(image/CancelAllListen.jpg);
+}

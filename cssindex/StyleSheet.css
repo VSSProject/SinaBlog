@@ -1,0 +1,597 @@
+﻿*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-color: #94CCEC;
+    font-family: Tahoma, Arial, sans-serif;
+}
+#contain
+{
+    width: 946px;
+    margin: 140px auto;
+}
+/*顶部Metro UI的设计*/
+#cTop
+{
+    width: 946px;
+    height: 118px;
+    float: left;
+}
+#cTop a img
+{
+    border-width: 0px;
+}
+#cTop div
+{
+    float: left;
+    position: relative;
+}
+#cTop div a
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#ctBox1, #ctBox2, #ctBox3, #ctBox5, #ctBox6, #ctBox8
+{
+    width: 260px;
+    height: 118px;
+    float: left;
+    background-color: Gray;
+}
+#ctBox4, #ctBox7
+{
+    width: 129px;
+    height: 118px;
+    background-color: Blue;
+}
+#ctBox6, #ctBox7, #ctBox8
+{
+    margin-left: 12px;
+}
+#ctBox2, #ctBox3, #ctBox4
+{
+    margin-left: 12px;
+}
+#ctBox5, #ctBox6, #ctBox7, #ctBox8
+{
+    margin-top: 12px;
+}
+#ctBox1
+{
+    background: url(image/indexMainEight.gif);
+}
+#ctBox2
+{
+    background: url(image/indexMainEight.gif) -274px 0px;
+}
+#ctBox3
+{
+    background: url(image/indexMainEight.gif) -545px 0px;
+}
+#ctBox4
+{
+    background: url(image/indexMainEight.gif) -817px 0px;
+}
+#ctBox5
+{
+    background: url(image/indexMainEight.gif) 0px -132px;
+}
+#ctBox6
+{
+    background: url(image/indexMainEight.gif) -273px -131px;
+}
+#ctBox7
+{
+    background: url(image/indexMainEight.gif) -544px -132px;
+}
+#ctBox8
+{
+    background: url(image/indexMainEight.gif) -685px -132px;
+}
+
+/*中部内容部分的设计*/
+#cMid
+{
+    margin-top: 20px;
+    float: left;
+    width: 942px;
+    position: relative;
+    border: 1px solid #AFAFAF;
+    background-color: White; /* 同正文背景 #DEEFFA;*/
+    overflow: hidden;
+}
+.Pages
+{
+    position: absolute;
+    top: 0px;
+    width: 942px;
+    left: 0px;
+    overflow: hidden;
+}
+/*第一页 Page1*/
+#cmPage1
+{
+    height: 300px;
+    background-image:url(image/Logo_main.jpg);
+    background-repeat:no-repeat;
+}
+#cmLeft1
+{
+    padding-top: 20px;
+    float: left;
+    width: 635px;
+    height: 100%;
+    overflow:hidden;
+}
+#cmLeft1 ul li
+{
+    list-style: none;
+    width: 100%;
+    float: left;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+
+/*右部设计*/
+#cmRight1
+{
+    margin-top: 0px;
+    float: left;
+    width: 300px;
+    height: 250px;
+    border-left: 1px dashed #d8d8d8;
+}
+#cmr1Login
+{
+    margin: 10px auto;
+    width: 280px;
+    height: 150px;
+}
+#cmr1Login dl
+{
+    float: left;
+    height: 40px;
+    width: 90%;
+    margin: 12px 5px 10px 40px;
+}
+#cmr1Login dt
+{
+    float: left;
+    height: 30px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    width: 70px;
+}
+#cmr1Login dd
+{
+    width: 212px;
+    float: left;
+}
+.dd_input
+{
+    border: 1px solid #bdc7d8;
+    width: 212px;
+    height: 18px;
+    padding: 5px;
+    float: left;
+}
+.dd_codeinput
+{
+    border: 1px solid #bdc7d8;
+    width: 112px;
+    height: 18px;
+    padding: 5px;
+    float: left;
+}
+#crm1CodeImg
+{
+    margin-left: 15px;
+    width: 70px;
+    height: 28px;
+}
+#cmr1LogBtn
+{
+    width: 177px;
+    height: 43px;
+    background-image: url(image/Button_Login.jpg);
+    margin: 20px auto;
+    cursor: pointer;
+}
+/*第二页 Page2*/
+#cmPage2
+{
+    height: 480px;
+    width: 942px;
+}
+#cmLeft2
+{
+    float: left;
+    height: 480px;
+    width: 68%;
+    border-right: 1px solid #E3EEF8;
+    font-size: 16px;
+}
+#cmRight2
+{
+    float: left;
+    height: 480px;
+    margin-left: 15px;
+    width: 271px;
+    background-image: url(image/RightBackground.jpg);
+    background-repeat: no-repeat;
+}
+
+.SimLine
+{
+    border-top: 1px solid #E8E8E8;
+    width: 90%;
+    margin: 0px auto;
+}
+.cmr2Top
+{
+    height: 50px;
+    color: #005EAC;
+    font-weight: 900;
+    line-height: 50px;
+    margin: 5px auto;
+    width: 90%;
+    font-size:20px;
+}
+#cmr2Mid dl
+{
+    float: left;
+    height: 30px;
+    width: 90%;
+    margin: 12px 5px 10px 40px;
+}
+#cmr2Mid dt
+{
+    float: left;
+    height: 30px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    width: 90px;
+}
+#cmr2Mid dd div
+{
+    font-size: 12px;
+    border: 1px solid #E7E7E7;
+    height: 28px;
+    width: 250px;
+    line-height: 28px;
+    float: left;
+    padding-left: 10px;
+    border-left: none;
+    color: Gray;
+}
+#btn_reg
+{
+    border: 0px;
+    width: 177px;
+    height: 43px;
+    background-image: url(image/Button_Joinus.jpg);
+    cursor: pointer;
+    margin-top: 17px;
+    margin-left: 200px;
+}
+#cmr2Mid dd label
+{
+    float: left;
+    cursor: pointer;
+    line-height: 30px;
+    padding-left: 10px;
+}
+#cmr2Mid dd select
+{
+    margin-top: 5px;
+    height: 20px;
+}
+
+
+/*第三页 Page3*/
+#cmPage3
+{
+    height: auto;
+    width: 942px;
+}
+#cmp3Left
+{
+    float: left;
+    height: 247px;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 373px;
+    background-image: url(image/cmp3LoginBkg.jpg);
+    background-repeat: no-repeat;
+    border-right: 1px solid #E3EEF8;
+}
+#cmp3Right
+{
+    float: left;
+    width: 530px;
+}
+.cmr3Top
+{
+    height: 50px;
+    color: #005EAC;
+    font-weight: 900;
+    line-height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.cml2Login dl
+{
+    float: left;
+    height: 30px;
+    width: 100%;
+    margin: 12px 5px 10px 5px;
+}
+.cml2Login dt
+{
+    float: left;
+    height: 30px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    width: 70px;
+}
+.cml2Login dd div
+{
+    font-size: 12px;
+    border: 1px solid #E7E7E7;
+    height: 28px;
+    width: 260px;
+    line-height: 28px;
+    float: left;
+    padding-left: 10px;
+    border-left: none;
+    color: Gray;
+}
+.cml2Login dd label
+{
+    float: left;
+    cursor: pointer;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.cml2Login dd select
+{
+    margin-top: 5px;
+    height: 20px;
+}
+.dd_codeinput
+{
+    border: 1px solid #bdc7d8;
+    width: 70px;
+    height: 18px;
+    padding: 5px;
+    float: left;
+}
+#cmp3CodeImg
+{
+    height: 30px;
+    width: 82px;
+    margin-left: 10px;
+    float: left;
+}
+#cmp3Login
+{
+    border: 0px;
+    width: 177px;
+    height: 43px;
+    background-image: url(image/Button_Login.jpg);
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 200px;
+}
+.dd_cmp3input
+{
+    border: 1px solid #bdc7d8;
+    width: 162px;
+    height: 18px;
+    padding: 5px;
+    float: left;
+}
+.blankDiv
+{
+    width: 100%;
+    height: 10px;
+}
+
+/*第四页 Page4*/
+#cmPage4
+{
+    height: auto;
+    width: 942px;
+}
+#cmp4
+{
+    width: 942px;
+}
+#cmp4Left
+{
+    float: left;
+    width: 567px;
+    border-right: 1px solid #E3EEF8;
+    font-size: 16px;
+    margin-left: 25px;
+}
+#cmp4Right
+{
+    float: left;
+    height: 407px;
+    margin-left: 15px;
+    width: 334px;
+    background-image: url(image/p4RightBkg.jpg);
+    background-repeat: no-repeat;
+}
+#cmp4 ul
+{
+    list-style: none;
+}
+#cmp4 ul li
+{
+    line-height: 30px;
+    font-size: 13px;
+    width: 500px;
+    float: left;
+}
+.cmp4Box
+{
+    width: 550px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#cmp4Write
+{
+    border: 0px;
+    width: 177px;
+    height: 43px;
+    background-image: url(image/Button_Submit.jpg);
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.p4InputText
+{
+    width: 500px;
+    height: 24px;
+    padding-left: 3px;
+}
+
+#p4Textarea
+{
+    width: 500px;
+    height: 90px;
+}
+
+.p4SimLine
+{
+    border-top: 1px solid #E8E8E8;
+    width: 100%;
+    margin: 0px auto;
+}
+.cmr4Top
+{
+    height: 50px;
+    color: #005EAC;
+    font-weight: 900;
+    line-height: 50px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+#p4sLi img
+{
+    width: 26px;
+    height: 26px;
+    float: left;
+    cursor: pointer;
+}
+
+/*第五页 Page5*/
+#cmPage5
+{
+    height: 500px;
+    width: 942px;
+}
+/*第六页 Page6*/
+#cmPage6
+{
+    height: 500px;
+    width: 942px;
+}
+/*第七页 Page7*/
+#cmPage7
+{
+    height: 500px;
+    width: 942px;
+}
+/*第八页 Page8*/
+#cmPage8
+{
+    height: auto;
+    width: 942px;
+}
+#ColorBack
+{
+    width: 850px;
+    height: 150px;
+    margin: 10px auto;
+    border-bottom: 1px dashed #5b5b5b;
+}
+#ImgBack
+{
+    width: 850px;
+    height: 150px;
+    margin: 10px auto;
+    border-bottom: 1px dashed #5b5b5b;
+}
+
+/*底部版权信息的设计*/
+#cBot
+{
+    margin-top: 20px;
+    float: left;
+    width: 946px;
+    text-align: center;
+}
+
+/*设置登陆结果展示*/
+#LoginFailShowDiv
+{
+    width: 400px;
+    height: 350px;
+    background-color: #FEFEFE;
+    border: 1px solid #5B5B5B;
+}
+#RegisterFinishJmpDiv
+{
+    width: 400px;
+    height: 350px;
+    background-color: #FEFEFE;
+    border: 1px solid #5B5B5B;
+}
+#SorryDiv
+{
+    width:282px;
+    height:240px;
+    background-image:url(image/LoginFail.jpg);
+    overflow:hidden;
+    margin:30px auto;
+}
+#LoginDiv
+{
+    width:280px;
+    height:240px;
+    margin:25px auto;
+    overflow:hidden;
+    background-image:url(image/LoginPass.jpg);
+}
+#LoginText
+{
+    font-size:18px;
+    font-weight:600;
+    text-align:center;
+    color:#2B2B2B;
+    font-family:"MicroSoft YaHei","SimHei";
+}
+#SorryText
+{
+    font-size:18px;
+    font-weight:600;
+    text-align:center;
+    color:#2B2B2B;
+    font-family:"MicroSoft YaHei","SimHei";
+}
